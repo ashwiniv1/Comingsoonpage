@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FINSECA - Coming September 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prosperity lies at the heart of the American Dream. Yet our nation is plagued by financial insecurity, a byproduct of insufficient retirement and insurance planning. We know there is a better way. We serve those who have built careers helping families and businesses prepare for the tomorrows they expect – and for those they don’t foresee.">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">-->
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' /> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="comingsoonModal" class="modal">
+  <div class="modal-content">
+    <a class="close-btn"></a>
+    <h2 class="modal-title">Coming September 2020</h2>
+  </div>
+</div>
+    <div class="comingsoon-section">
+        <div class="container">
+            <section class="content">
+                <h4>AALU and GAMA have joined to become Finseca</h4>
+                <h2>Financial security for all</h2>                
+                <div id="comingsoon-toggle">
+                    <div id="toggle-section">
+                        <p>Prosperity lies at the heart of the American Dream. Yet our nation is plagued by financial insecurity, a byproduct of insufficient retirement and insurance planning. We know there is a better way. We serve those who have built careers helping families and businesses prepare for the tomorrows they expect – and for those they don’t foresee.</p>
+                        <p>As the voice of the financial security profession, our sole focus is on creating an environment that enables people to protect and enhance financial well-being – for themselves, their families and their businesses.</p>
+                        <p>Working with our nation’s key policy makers and building upon the experience of our profession’s most influential leaders, we never lose sight of what really matters: protecting the dreams and promoting the prosperity of the American people and those around the world through serving the needs of our members, and the entire financial security profession.</p>      
+                    </div>
+                    <a id="open-close-toggle">
+                        <span class="angle-top"></span>
+                        <span class="angle-bottom hidden"></span>
+                    </a>
+                </div>
+                <div class="comingsoon-footer-logo"><img src="images/Finseca_logo_tm_wt_rgb.png"></div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('#open-close-toggle').on("click", function(){
+            var $arrows = $(this).find("span");
+            $('#toggle-section').slideToggle("slow", function(){
+                $arrows.toggle();
+            });
+            $('#toggle-section').get(0).scrollIntoView();
+        });
+        var modal = document.getElementById("comingsoonModal");
+        var span = document.getElementsByClassName("close-btn")[0];
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>
+
+</html>
