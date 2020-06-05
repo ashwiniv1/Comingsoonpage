@@ -234,10 +234,10 @@ body {
 }
 
 /* Responsive Version */
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
 	body {
-    height: auto;
-}
+	    height: auto;
+	}
 	.comingsoon-section {
 		height: 100%;
     	min-height: 100vh;
@@ -251,20 +251,14 @@ body {
 		right: 0;
 		padding: 100px 30px 30px;
 	}
-
 	.content h2 {
 		font-size: 34px;
 		line-height: 39px;
 	}
 
-	.content h4 {
+	.content h4, .content p {
 		font-size: 16px;
 	}
-
-	.content p {
-		font-size: 16px;
-	}
-
 	.comingsoon-footer-logo {
 		text-align: right;
 		position: relative;
@@ -272,7 +266,8 @@ body {
 		right: 0;
 		margin-top: 100px;
 	}
-
+}
+@media only screen and (max-width:767px) {
 	.modal-content {
 		padding: 10px;
 		width: 70%;
